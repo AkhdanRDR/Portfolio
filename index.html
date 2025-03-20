@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Akhdan</h2>
+        <ul class="nav-links">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="About">
+        <section class="divide-txt">
+          <h1>Hi, I'm Akhdan</h1>
+          <h1>Full Stack Web Developer</h1>
+          <p>
+            I'm a full stack web developer with a passion for creating
+            user-friendly and visually appealing websites.
+          </p>
+          <a href="https://github.com/AkhdanRDR">See my Github</a>
+        </section>
+        <section class="divide-img">
+          <img src="Akhdan.png" alt="Akhdan" />
+        </section>
+      </section>
+      <section id="Services">
+        <p class="mini">My Services</p>
+        <h1>Nice to make you feel happy</h1>
+        <section class="contain-card">
+          <section class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#39c6a5"
+                d="M11.5 18c4 0 7.46-2.22 9.24-5.5C18.96 9.22 15.5 7 11.5 7s-7.46 2.22-9.24 5.5C4.04 15.78 7.5 18 11.5 18m0-12c4.56 0 8.5 2.65 10.36 6.5C20 16.35 16.06 19 11.5 19S3 16.35 1.14 12.5C3 8.65 6.94 6 11.5 6m0 2C14 8 16 10 16 12.5S14 17 11.5 17S7 15 7 12.5S9 8 11.5 8m0 1A3.5 3.5 0 0 0 8 12.5a3.5 3.5 0 0 0 3.5 3.5a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 11.5 9"
+              />
+            </svg>
+            <h3>UI/UX Design</h3>
+            <p>
+              I create intuitive and engaging user interfaces that enhance user
+              experience and satisfaction.
+            </p>
+          </section>
+          <section class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#39c6a5"
+                d="m15.17 16.74l-.71-.7L18 12.5l-3.54-3.54l.71-.7l4.24 4.24zm-7.34 0L3.59 12.5l4.24-4.24l.71.7L5 12.5l3.54 3.54z"
+              />
+            </svg>
+            <h3>Website Development</h3>
+            <p>
+              I build interactive, responsive, and high-performance websites
+              that meet the requirements of modern web applications.
+            </p>
+          </section>
+          <section class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#39c6a5"
+                d="M14 20a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1zm1-3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-2c-1.8-1.18-3-3.2-3-5.5A6.5 6.5 0 0 1 11.5 3A6.5 6.5 0 0 1 18 9.5c0 2.3-1.2 4.32-3 5.5zm-6 0a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-2.6c1.78-.9 3-2.76 3-4.9A5.5 5.5 0 0 0 11.5 4A5.5 5.5 0 0 0 6 9.5c0 2.14 1.22 4 3 4.9zm-.87-6.88l2.37-2.37l2 2L14.25 8l.71.71l-2.46 2.45l-2-2l-1.66 1.67z"
+              />
+            </svg>
+            <h3>Logo/Photo Design</h3>
+            <p>
+              I am a logo designer who creates unique and memorable visual
+              identities, turning ideas into powerful and meaningful symbols.
+            </p>
+          </section>
+        </section>
+      </section>
+      <section id="Projects">
+        <section id="project">
+          <p class="mini">My Projects</p>
+          <h3 id="section-header">Ambitious web developer</h3>
+          <figure>
+            <a href="https://github.com/AkhdanRDR/shania-yan-fanpage"
+              ><img src="Shania.png" alt="Fanpage" width="200px"
+            /></a>
+            <figcaption>
+              <h3>Shania Yan Fanpage</h3>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </figcaption>
+          </figure>
+        </section>
+      </section>
+      <section id="Contact">
+        <p class="mini">Contact Me</p>
+        <h3>Contact me to keep us connected</h3>
+        <form method="post">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+          ></textarea>
+          <input id="submit" type="button" value="Send Message" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
