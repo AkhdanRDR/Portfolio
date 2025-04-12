@@ -3,128 +3,447 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akhdan | Web Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <h2>Akhdan</h2>
-        <ul class="nav-links">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
+    <!-- Nav Section -->
+    <section id="nav">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-2 px-5">
+          <a class="navbar-brand fs-2 fw-semibold" href="#">Akhdan</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="nav fw-medium">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </header>
-    <main>
-      <section id="About">
-        <section class="divide-txt">
-          <h1>Hi, I'm Akhdan</h1>
-          <h1>Full Stack Web Developer</h1>
-          <p>
-            I'm a full stack web developer with a passion for creating
-            user-friendly and visually appealing websites.
+    </section>
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="px-4 py-5 my-5 text-center">
+        <h2 class="display-5 fw-bold">Hello, I'm Akhdan</h2>
+        <div class="col-lg-6 mx-auto fw-medium">
+          <p class="lead mb-4">
+            I'm a passionate Web Developer specializing in creating elegant and
+            functional websites. I love turning ideas into reality through code.
           </p>
-          <a href="https://github.com/AkhdanRDR">See my Github</a>
-        </section>
-        <section class="divide-img">
-          <img src="Akhdan.png" alt="Akhdan" />
-        </section>
-      </section>
-      <section id="Services">
-        <p class="mini">My Services</p>
-        <h1>Nice to make you feel happy</h1>
-        <section class="contain-card">
-          <section class="card">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="70"
-              height="70"
-              viewBox="0 0 24 24"
+          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+            <a
+              href="#project"
+              class="btn btn-primary btn-lg px-4 p-3 fs-6 fw-medium"
             >
-              <path
-                fill="#39c6a5"
-                d="M11.5 18c4 0 7.46-2.22 9.24-5.5C18.96 9.22 15.5 7 11.5 7s-7.46 2.22-9.24 5.5C4.04 15.78 7.5 18 11.5 18m0-12c4.56 0 8.5 2.65 10.36 6.5C20 16.35 16.06 19 11.5 19S3 16.35 1.14 12.5C3 8.65 6.94 6 11.5 6m0 2C14 8 16 10 16 12.5S14 17 11.5 17S7 15 7 12.5S9 8 11.5 8m0 1A3.5 3.5 0 0 0 8 12.5a3.5 3.5 0 0 0 3.5 3.5a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 11.5 9"
-              />
-            </svg>
-            <h3>UI/UX Design</h3>
-            <p>
-              I create intuitive and engaging user interfaces that enhance user
-              experience and satisfaction.
-            </p>
-          </section>
-          <section class="card">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="70"
-              height="70"
-              viewBox="0 0 24 24"
+              View My Work
+            </a>
+            <a
+              href="#contact"
+              class="btn btn-outline-secondary btn-lg px-4 p-3 fs-6 fw-medium"
             >
-              <path
-                fill="#39c6a5"
-                d="m15.17 16.74l-.71-.7L18 12.5l-3.54-3.54l.71-.7l4.24 4.24zm-7.34 0L3.59 12.5l4.24-4.24l.71.7L5 12.5l3.54 3.54z"
-              />
-            </svg>
-            <h3>Website Development</h3>
-            <p>
-              I build interactive, responsive, and high-performance websites
-              that meet the requirements of modern web applications.
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 text-center">
+        About Me
+      </h1>
+      <div class="justify-content-center px-4 pb-5">
+        <div class="row flex-lg-row align-items-center g-5 pb-5">
+          <div class="col-10 col-sm-8 col-lg-4">
+            <img
+              src="Akhdan.png"
+              class="d-block mx-lg-auto img-fluid rounded-circle"
+              alt="Bootstrap Themes"
+              width="1200"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-8">
+            <h4 class="fw-bold mb-3">Frontend Developer & UI/UX Enthusiast</h4>
+            <p class="lead mt-4">
+              Hello! I'm John, a passionate web developer with 5 years of
+              experience crafting responsive and user-friendly websites. I'm
+              dedicated to creating digital experiences that are both beautiful
+              and functional. My journey in web development started when I built
+              my first website for a local business in my hometown. Since then,
+              I've worked on various projects ranging from small business
+              websites to complex web applications.
             </p>
-          </section>
-          <section class="card">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="70"
-              height="70"
-              viewBox="0 0 24 24"
+            <h4 class="fw-bold mb-3">My Skills:</h4>
+            <div class="row flex-lg-row">
+              <div class="col-6">
+                <p class="lead mb-1">HTML5</p>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+                <p class="lead mb-1">Responsive Design</p>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 67%"></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <p class="lead mb-1">CSS3</p>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 81%"></div>
+                </div>
+                <p class="lead mb-1">UI/UX Design</p>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 56%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Resume Project -->
+    <section id="resume">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 text-center">
+        My Resume
+      </h1>
+      <div id="education" class="tab-content active">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-year">2024 - Present</span>
+              <h3 class="timeline-title">
+                Full-Stack Web Developer (Progress)
+              </h3>
+              <p>Full-Stack Online Course</p>
+              <p>
+                Focused on web development and web design. Gaining hands-on
+                experience with various technologies and frameworks.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-year">2022 - 2024</span>
+              <h3 class="timeline-title">Hiatus</h3>
+              <p>Almost Give Up</p>
+              <p>
+                Took a break from coding to focus on personal growth and
+                exploration of new interests.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-year">2020 - 2022</span>
+              <h3 class="timeline-title">Minecraft Add-on Coder</h3>
+              <p>Learning JSON</p>
+              <p>
+                Developed Minecraft add-ons using JSON and Minecraft Add-on
+                Editor. Gained experience in coding and game design.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-year">2018 - 2020</span>
+              <h3 class="timeline-title">First Programming</h3>
+              <p>Basic Fundamentals</p>
+              <p>
+                Started Learning in code.org and gained basic thoughts about
+                programming. Explored various programming languages and
+                concepts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Section -->
+    <section id="project">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 text-center">
+        My Projects
+      </h1>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-md-3 g-4 mx-2 justify-content-center"
+      >
+        <div class="col">
+          <div class="card">
+            <img src="Portfolio.png" class="card-img-top" alt="Portfolio" />
+            <div class="card-body pb-0">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">
+                A personal portfolio website showcasing my skills and projects
+                with responsive design. It includes sections for my work,
+                resume, and contact information. The website is built using HTML
+                and CSS only.
+              </p>
+            </div>
+            <div class="d-flex justify-content-start px-3 pb-4 fs-5">
+              <span class="badge bg-secondary-subtle rounded-pill">HTML</span>
+              <span class="badge bg-secondary-subtle rounded-pill">CSS</span>
+            </div>
+            <div
+              class="d-flex justify-content-start px-3 pb-4 gap-4 fw-semibold"
             >
-              <path
-                fill="#39c6a5"
-                d="M14 20a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1zm1-3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-2c-1.8-1.18-3-3.2-3-5.5A6.5 6.5 0 0 1 11.5 3A6.5 6.5 0 0 1 18 9.5c0 2.3-1.2 4.32-3 5.5zm-6 0a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-2.6c1.78-.9 3-2.76 3-4.9A5.5 5.5 0 0 0 11.5 4A5.5 5.5 0 0 0 6 9.5c0 2.14 1.22 4 3 4.9zm-.87-6.88l2.37-2.37l2 2L14.25 8l.71.71l-2.46 2.45l-2-2l-1.66 1.67z"
+              <a
+                class="link-offset-2 link-underline link-underline-opacity-0"
+                href="#"
+                >View Demo</a
+              >
+              <a
+                class="link-offset-2 link-underline link-underline-opacity-0"
+                href="#"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="OtherPortfolio.png"
+              class="card-img-top"
+              alt="Other Portfolio"
+            />
+            <div class="card-body">
+              <h5 class="card-title">My Other Portfolio</h5>
+              <p class="card-text">
+                This project showcases my previous portfolio website,
+                highlighting my skills in web development and design. It
+                includes examples of responsive layouts, interactive elements,
+                and clean code structure. (Enhanced with AI)
+              </p>
+            </div>
+            <div class="d-flex justify-content-start px-3 pb-4 fs-5">
+              <span class="badge bg-secondary-subtle rounded-pill">HTML</span>
+              <span class="badge bg-secondary-subtle rounded-pill">CSS</span>
+            </div>
+            <div
+              class="d-flex justify-content-start px-3 pb-4 gap-4 fw-semibold"
+            >
+              <a
+                class="link-offset-2 link-underline link-underline-opacity-0"
+                href="#"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="Shania.png"
+                class="card-img-top"
+                alt="Fanpage Example"
               />
-            </svg>
-            <h3>Logo/Photo Design</h3>
-            <p>
-              I am a logo designer who creates unique and memorable visual
-              identities, turning ideas into powerful and meaningful symbols.
-            </p>
-          </section>
-        </section>
-      </section>
-      <section id="Projects">
-        <section id="project">
-          <p class="mini">My Projects</p>
-          <h3 id="section-header">Ambitious web developer</h3>
-          <figure>
-            <a href="https://github.com/AkhdanRDR/shania-yan-fanpage"
-              ><img src="Shania.png" alt="Fanpage" width="200px"
-            /></a>
-            <figcaption>
-              <h3>Shania Yan Fanpage</h3>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </figcaption>
-          </figure>
-        </section>
-      </section>
-      <section id="Contact">
-        <p class="mini">Contact Me</p>
-        <h3>Contact me to keep us connected</h3>
-        <form method="post">
-          <input type="text" name="name" id="name" placeholder="Name" />
-          <input type="email" name="email" id="email" placeholder="Email" />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Message"
-          ></textarea>
-          <input id="submit" type="button" value="Send Message" />
-        </form>
-      </section>
-    </main>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Fanpage Example</h5>
+              <p class="card-text">
+                A responsive fan page website for Shania Yan, showcasing modern
+                design principles and clean code. It features a user-friendly
+                layout, interactive elements, and a focus on user experience.
+              </p>
+            </div>
+            <div class="d-flex justify-content-start px-3 pb-4 fs-5">
+              <span class="badge bg-secondary-subtle rounded-pill">HTML</span>
+              <span class="badge bg-secondary-subtle rounded-pill">CSS</span>
+              <span class="badge bg-secondary-subtle rounded-pill"
+                >Javascript</span
+              >
+            </div>
+            <div
+              class="d-flex justify-content-start px-3 pb-4 gap-4 fw-semibold"
+            >
+              <a
+                class="link-offset-2 link-underline link-underline-opacity-0"
+                href="#"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Cashier.png" class="card-img-top" alt="Simple Cashier" />
+            <div class="card-body">
+              <h5 class="card-title">Simple Cashier System</h5>
+              <p class="card-text">
+                A simple cashier system built using Java only. It allows users
+                to calculate total prices and manage transactions efficiently.It
+                features basic functionality.
+              </p>
+            </div>
+            <div class="d-flex justify-content-start px-3 pb-4 fs-5">
+              <span class="badge bg-secondary-subtle rounded-pill">Java</span>
+            </div>
+            <div
+              class="d-flex justify-content-start px-3 pb-4 gap-4 fw-semibold"
+            >
+              <a
+                class="link-offset-2 link-underline link-underline-opacity-0"
+                href="#"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="mb-0">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 text-center">
+        Get In Touch
+      </h1>
+      <div class="justify-content-center px-4 pb-5">
+        <div class="contact row flex-lg-row align-items-start g-5 pb-5 mx-4">
+          <div class="col-10 col-sm-8 col-lg-4">
+            <h4 class="fw-bold mb-3">Contact Information</h4>
+            <div class="contact-method d-flex">
+              <div class="contact-icon rounded-circle">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text ms-2">
+                <h5>Email</h5>
+                <p>akhdanrafifdzr@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-method d-flex">
+              <div class="contact-icon rounded-circle">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text ms-2">
+                <h5>Phone</h5>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-method d-flex">
+              <div class="contact-icon rounded-circle">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text ms-2">
+                <h5>Location</h5>
+                <p>New York, NY, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="mb-3 fw-medium form">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control mb-3 p-2" id="name" />
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control mb-3 p-2" id="email" />
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control mb-3 p-2" id="subject" />
+              <label for="message" class="form-label">Example textarea</label>
+              <textarea
+                class="form-control mb-3"
+                id="message"
+                rows="3"
+              ></textarea>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg fs-6 mt-2 fw-medium"
+              >
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <section id="footer" class="py-2">
+      <div class="container">
+        <footer class="py-2 mt-4">
+          <ul class="nav justify-content-center pb-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 rounded-circle mx-2"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 rounded-circle mx-2"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 rounded-circle mx-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 rounded-circle mx-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+          <p class="text-center">© 2025 Akhdan. All rights reserved.</p>
+        </footer>
+      </div>
+    </section>
   </body>
 </html>
